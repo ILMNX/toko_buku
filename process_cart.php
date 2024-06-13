@@ -2,6 +2,12 @@
   session_start();
   include("config.php");
 
+
+  if (!isset($_SESSION["id_customer"])) {
+    // Jika belum login, arahkan ke halaman login
+    header("location: auth/registrasi_customer.php");
+    exit(); // Pastikan untuk keluar dari skrip ini setelah melakukan redirect
+  }
 // menambah barang ke cart
   if (isset($_POST["add_to_cart"])) {
     // tampung kode_buku dan jumlah Beli

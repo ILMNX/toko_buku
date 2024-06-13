@@ -28,7 +28,9 @@
             </form>
           </div>
           <div class="card-footer text-center">
+            Belum punya akun? <a href="registrasi_customer.php">Registrasi</a>
           </div>
+
         </div>
       </div>
       <!-- end-card -->
