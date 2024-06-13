@@ -1,7 +1,7 @@
 <?php
   session_start();
   if (!isset($_SESSION["id_customer"])) {
-    header("location:login_customer.php");
+    header("location:auth/login_customer.php");
   }
 
   // mengambil file config.php
