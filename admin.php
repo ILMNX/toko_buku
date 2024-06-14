@@ -1,3 +1,4 @@
+<!-- Backend -->
 <?php
   session_start();
   if (!isset($_SESSION["id_admin"])) {
@@ -28,8 +29,9 @@
   $jumlah_totalpengunjung = mysqli_query($connect, "SELECT * FROM counterdb");
   $total_pengunjung = mysqli_num_rows($jumlah_totalpengunjung);
   ?>
+ <!-- Backend -->
 
-
+ <!-- Frontend -->
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -76,7 +78,8 @@
     <!-- End-Navbar -->
 
     <?php
-      
+      // Frontend 
+
       if (isset($_POST["find"])) {
         
         $find = $_POST["find"];
@@ -94,7 +97,7 @@
       
       $query = mysqli_query($connect, $sql);
      ?>
-
+  <!-- Frontend sampai bawah-->
     <div class="container">
       <!-- Start-chart -->
       <div class="mb-2 row">
