@@ -8,6 +8,9 @@
   // agar tidak perlu membuat koneksi baru
   include("config.php");
  ?>
+<!-- backend -->
+    
+<!-- frontend -->
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -46,7 +49,9 @@
       include("navbar_admin.php");
     ?>
     <!-- End-Navbar -->
-
+    <!-- frontend -->
+    
+    <!-- backend -->
     <?php
       // Perintah SQL untuk Menampilkan Data Customer
       if (isset($_POST["find"])) {
@@ -67,6 +72,7 @@
       // $connect -> mengambil dari config.php
       $query = mysqli_query($connect, $sql);
      ?>
+     <!-- backend -->
 
     <div class="container">
       <!-- card -->
